@@ -12,6 +12,7 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/fonts/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,9 +27,20 @@
     <header id="header">
       <nav class="container">
         <a class="logo" href="#">
-          <img src="src/logo_inline.svg" alt="Logo da empresa prisma systems" />
+          <!-- <img src="src/logo_inline.svg" alt="Logo da empresa prisma systems" /> -->
+          prisma systems
         </a>
-        <div class="menu">...</div>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
@@ -43,7 +55,7 @@
           </div>
 
           <div class="text">
-            <h1>O melhor da tecnologia ao seu dispor</h1>
+            <h2 class="title">O melhor da tecnologia ao seu dispor</h2>
             <p>
               Somos uma empresa de tecnologia Brasileira com objetivo de
               solucionar os seus problemas de maneira efeciente, prática e
@@ -56,12 +68,47 @@
 
       <div class="divider-1"></div>
 
-      <section class="section">
-        <div class="container">Outra section inicia aqui!</div>
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">          
+            <img src="src/img-003.jpg" alt="Um grupo de pessoas trabalhando em seus computadores">
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre Nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              ratione quasi quas magni, recusandae dolores exercitationem
+              asperiores repellendus eius inventore laborum iusto eaque
+              quibusdam quod qui, veritatis non enim eos.
+            </p>
+          </br>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+              voluptate sunt maxime quo! Aspernatur, animi! Ea praesentium sint
+              illum, veniam rem sit accusamus sequi voluptatem omnis libero
+              molestias vitae sed.
+            </p>
+          </br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              consectetur omnis nam ab impedit obcaecati ut nostrum voluptate
+              commodi laborum rerum magnam dolor voluptates itaque veniam, vero
+              aut molestias mollitia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <section class="section" id="services">
+        <div class="container grid">
+          header
+        </div>
       </section>
     </main>
 
     <footer></footer>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
