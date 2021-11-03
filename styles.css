@@ -1,19 +1,3 @@
-/* RESET DA PAGINA */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
 /* ==================VARIAVEIS=================== */
 
 :root {
@@ -26,7 +10,31 @@ a {
   --header-height: 4.5rem;
 }
 
-/* ==================ESTILOS=================== */
+/* RESET DA PAGINA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin-top: calc(var(--header-height) + 2rem);
+}
+
+/* ==================ESTILOS/PADROES=================== */
 
 body {
   font: 400 1rem "DM Sans", sans-serif;
@@ -35,7 +43,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1 {
+.title {
   font: 700 1.875rem "Poppins", sans-serif;
   color: var(--orange-dark);
   -webkit-font-smoothing: auto;
@@ -61,8 +69,17 @@ h1 {
   height: 1px;
   background: linear-gradient(
     90deg,
-    rgba(228, 228, 228, 1) 0%,
-    rgba(231, 111, 81, 1) 100%
+    rgba(228, 228, 228, 1),
+    rgba(231, 111, 81, 1)
+  );
+}
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(231, 111, 81, 1),
+    rgba(228, 228, 228, 1)
   );
 }
 
@@ -78,6 +95,10 @@ h1 {
 
 .section {
   padding: 5rem 0;
+}
+
+.section .title {
+  margin-bottom: 1rem;
 }
 
 #header {
@@ -102,18 +123,94 @@ nav {
   justify-content: space-between;
 }
 
-.logo {
-  /*
-  font: 700 1.31rem "Poppins", sans-serif;
-  color: var(--orange-dark);
-  */
-
-  width: 40%;
-  height: auto;
+nav ul li {
+  text-align: center;
 }
 
-main {
-  margin-top: var(--header-height);
+nav ul li a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: var(--orange-light);
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+
+  background: var(--orange-light);
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ==================MENU MOBILE=================== */
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+
+  background-color: var(--white-default);
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav.show .menu {
+  display: grid;
+  place-content: center;
+}
+
+nav.show ul.grid {
+  gap: 4rem;
+}
+
+.toggle {
+  color: var(--orange-dark);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav .icon-close {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  right: 1.5rem;
+}
+
+nav.show .icon-close {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ==================ESTILOS/SECTIONS=================== */
+.logo {
+  font: 700 1.31rem "Poppins", sans-serif;
+  color: var(--orange-dark);
+
+  /*
+  width: 50%;
+  height: auto;
+  */
 }
 
 #home {
@@ -165,3 +262,47 @@ main {
 #home .text p {
   margin-bottom: 2rem;
 }
+
+/* ==================================== */
+
+#about {
+  background: var(--white-default);
+  overflow: hidden;
+}
+
+#about .container {
+  margin: 0;
+}
+
+#about .image {
+  position: relative;
+}
+
+#about .image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--orange-light);
+  opacity: 35%;
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+
+  z-index: 0;
+}
+
+#about .image img {
+  position: relative;
+}
+
+#about .image img,
+#about .image::before {
+  border-radius: 0.25rem;
+}
+
+#about .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* ==================================== */
