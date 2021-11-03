@@ -96,6 +96,7 @@ h1 {
 
 nav {
   height: var(--header-height);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,7 +108,7 @@ nav {
   color: var(--orange-dark);
   */
 
-  width: 25%;
+  width: 40%;
   height: auto;
 }
 
