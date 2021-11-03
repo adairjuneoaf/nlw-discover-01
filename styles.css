@@ -2,12 +2,25 @@
 
 :root {
   --white-default: #f9f9f9;
-  --white-gray: #e4e4e4;
-  --orange-dark: #e76f51;
-  --orange-light: #f4a261;
+  --white-gray: #ced4da;
+  --white-gray-dark: #495057;
   --yellow-light: #e9c46a;
+  --orange-light: #f4a261;
+  --orange-dark: #e76f51;
 
   --header-height: 4.5rem;
+
+  /*====================*/
+
+  --hue: 159;
+
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
 }
 
 /* RESET DA PAGINA */
@@ -36,16 +49,20 @@ main {
 
 /* ==================ESTILOS/PADROES=================== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 400 1rem "DM Sans", sans-serif;
-  color: var(--orange-light);
+  color: var(--white-gray-dark);
   background-color: var(--white-default);
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
   font: 700 1.875rem "Poppins", sans-serif;
-  color: var(--orange-dark);
+  color: var(--white-gray-dark);
   -webkit-font-smoothing: auto;
 }
 
@@ -101,6 +118,14 @@ body {
   margin-bottom: 1rem;
 }
 
+.section header {
+  margin-bottom: 4rem;
+}
+
+.section header strong {
+  color: var(--orange-dark);
+}
+
 #header {
   border-bottom: 1px solid var(--white-gray);
   margin-bottom: 2rem;
@@ -113,6 +138,10 @@ body {
   z-index: 100;
 
   background-color: var(--white-default);
+}
+
+#header.scroll {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
 nav {
@@ -158,6 +187,12 @@ nav ul li a:hover::after {
 nav .menu {
   opacity: 0;
   visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+nav .menu ul {
+  display: none;
 }
 
 nav.show .menu {
@@ -172,11 +207,13 @@ nav.show .menu {
   position: fixed;
   top: 0;
   left: 0;
-}
 
-nav.show .menu {
   display: grid;
   place-content: center;
+}
+
+nav.show .menu ul {
+  display: grid;
 }
 
 nav.show ul.grid {
@@ -194,23 +231,43 @@ nav .icon-close {
   opacity: 0;
 
   position: absolute;
+  top: -1.5rem;
   right: 1.5rem;
+
+  transition: 0.2s;
 }
 
-nav.show .icon-close {
+nav.show div.icon-close {
   visibility: visible;
   opacity: 1;
+  top: 1.5rem;
 }
 
 /* ==================ESTILOS/SECTIONS=================== */
 .logo {
   font: 700 1.31rem "Poppins", sans-serif;
   color: var(--orange-dark);
-
   /*
   width: 50%;
   height: auto;
   */
+}
+
+div.logo-prisma-systems {
+  display: flex;
+  align-items: center;
+}
+
+nav a.escrita {
+  margin-left: 0.5rem;
+}
+
+nav a.prysma {
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #e9c46a 0%, #f4a261 50%, #e76f51 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
 }
 
 #home {
@@ -306,3 +363,28 @@ nav.show .icon-close {
 }
 
 /* ==================================== */
+
+.cards.grid {
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 00.25rem solid var(--orange-dark);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: center;
+}
+
+.card i {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--orange-dark);
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}

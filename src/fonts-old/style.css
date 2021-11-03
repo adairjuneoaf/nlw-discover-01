@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?vcv11t');
-  src:  url('fonts/icomoon.eot?vcv11t#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?vcv11t') format('truetype'),
-    url('fonts/icomoon.woff?vcv11t') format('woff'),
-    url('fonts/icomoon.svg?vcv11t#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?toemao');
+  src:  url('fonts/icomoon.eot?toemao#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?toemao') format('truetype'),
+    url('fonts/icomoon.woff?toemao') format('woff'),
+    url('fonts/icomoon.svg?toemao#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,20 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo-prisma-systems:before {
-  content: "\e90c";
-}
 .icon-phone:before {
-  content: "\e90a";
-}
-.icon-sale:before {
   content: "\e900";
 }
-.icon-development:before {
+.icon-cosmetic:before {
   content: "\e901";
-}
-.icon-tools:before {
-  content: "\e908";
 }
 .icon-facebook:before {
   content: "\e902";
@@ -58,8 +49,14 @@
 .icon-menu:before {
   content: "\e907";
 }
+.icon-trim:before {
+  content: "\e908";
+}
 .icon-whatsapp:before {
   content: "\e909";
+}
+.icon-woman-hair:before {
+  content: "\e90a";
 }
 .icon-youtube:before {
   content: "\e90b";

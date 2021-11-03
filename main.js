@@ -15,3 +15,14 @@ for(const link of links){
         nav.classList.remove('show')
     })
 }
+
+const shadowHeader = document.querySelector('#header')
+const navHeight = header.offsetHeight
+
+window.addEventListener('scroll', ()=>{
+    if(window.scrollY >= navHeight){
+        shadowHeader.classList.add('scroll')
+    }else{
+        shadowHeader.classList.remove('scroll')
+    }
+})
