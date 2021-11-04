@@ -1,151 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="src/icone.svg"
-      type="image/x-icon"
-      sizes="64x64"
-    />
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="src/fonts/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="src/icone.svg" type="image/x-icon" sizes="64x64" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <title>Prisma Systems | O melhor da tecnologia ao seu dispor!</title>
-  </head>
-  <body>
-    <header id="header">
-      <nav class="container">
-        <div class="logo-prisma-systems">
-          <a class="icon-logo-prisma-systems logo prysma" href="#"></a>
-          <a class="logo escrita" href="#">
-            <!-- <img src="src/logo_inline.svg" alt="Logo da empresa prisma systems" /> -->
-            prisma.systems
-          </a>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="src/fonts/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <title>Prisma Systems | O melhor da tecnologia ao seu dispor!</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="container">
+      <div class="logo-prisma-systems">
+        <a class="icon-logo-prisma-systems logo prysma" href="#"></a>
+        <a class="logo escrita" href="#">
+          <!-- <img src="src/logo_inline.svg" alt="Logo da empresa prisma systems" /> -->
+          prisma.systems
+        </a>
+      </div>
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#home">Início</a></li>
+          <li><a class="title" href="#about">Sobre</a></li>
+          <li><a class="title" href="#services">Serviços</a></li>
+          <li><a class="title" href="#testimonials">Depoimentos</a></li>
+          <li><a class="title" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" id="home">
+      <div class="container grid">
+        <div class="image">
+          <img src="src/img-002.jpg" alt="Computador com tela ligada monstrando códigos de programação." />
         </div>
-        <div class="menu">
-          <ul class="grid">
-            <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#about">Sobre</a></li>
-            <li><a class="title" href="#services">Serviços</a></li>
-            <li><a class="title" href="#testimonials">Depoimentos</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
-          </ul>
+        <div class="text">
+          <h2 class="title">O melhor da tecnologia ao seu dispor</h2>
+          <p>
+            Somos uma empresa de tecnologia Brasileira com objetivo de
+            solucionar os seus problemas de maneira efeciente, prática e
+            acessível.
+          </p>
+          <a class="button" href="#">Entrar em contato</a>
         </div>
-        <div class="toggle icon-menu"></div>
-        <div class="toggle icon-close"></div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main>
-      <section class="section" id="home">
-        <div class="container grid">
-          <div class="image">
-            <img
-              src="src/img-002.jpg"
-              alt="Computador com tela ligada monstrando códigos de programação."
-            />
-          </div>
+    <div class="divider-1"></div>
 
-          <div class="text">
-            <h2 class="title">O melhor da tecnologia ao seu dispor</h2>
-            <p>
-              Somos uma empresa de tecnologia Brasileira com objetivo de
-              solucionar os seus problemas de maneira efeciente, prática e
-              acessível.
-            </p>
-            <a class="button" href="#">Entrar em contato</a>
-          </div>
+    <section class="section" id="about">
+      <div class="container grid">
+        <div class="image">
+          <img src="src/img-003.jpg" alt="Um grupo de pessoas trabalhando em seus computadores">
         </div>
-      </section>
-
-      <div class="divider-1"></div>
-
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image">          
-            <img src="src/img-003.jpg" alt="Um grupo de pessoas trabalhando em seus computadores">
-          </div>
-          <div class="text">
-            <h2 class="title">Sobre Nós</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              ratione quasi quas magni, recusandae dolores exercitationem
-              asperiores repellendus eius inventore laborum iusto eaque
-              quibusdam quod qui, veritatis non enim eos.
-            </p>
+        <div class="text">
+          <h2 class="title">Sobre Nós</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            ratione quasi quas magni, recusandae dolores exercitationem
+            asperiores repellendus eius inventore laborum iusto eaque
+            quibusdam quod qui, veritatis non enim eos.
+          </p>
           </br>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-              voluptate sunt maxime quo! Aspernatur, animi! Ea praesentium sint
-              illum, veniam rem sit accusamus sequi voluptatem omnis libero
-              molestias vitae sed.
-            </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            voluptate sunt maxime quo! Aspernatur, animi! Ea praesentium sint
+            illum, veniam rem sit accusamus sequi voluptatem omnis libero
+            molestias vitae sed.
+          </p>
           </br>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              consectetur omnis nam ab impedit obcaecati ut nostrum voluptate
-              commodi laborum rerum magnam dolor voluptates itaque veniam, vero
-              aut molestias mollitia.
-            </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            consectetur omnis nam ab impedit obcaecati ut nostrum voluptate
+            commodi laborum rerum magnam dolor voluptates itaque veniam, vero
+            aut molestias mollitia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2"></div>
+
+    <section class="section" id="services">
+      <div class="container grid">
+        <header>
+          <h2 class="title">Serviços</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni <strong>provident</strong> doloribus
+            explicabo esse quod recusandae minus sint inventore, natus necessitatibus tempora,
+            soluta nobis exercitationem minima autem assumenda vitae quis ullam!
+          </p>
+        </header>
+        <div class="cards grid">
+          <div class="card">
+            <i class="icon-development"></i>
+            <h3 class="title">Prisma Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipis.</p>
+          </div>
+          <div class="card">
+            <i class="icon-tools"></i>
+            <h3 class="title">Prisma Tools</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="card">
+            <i class="icon-sale"></i>
+            <h3 class="title">Prisma Sale</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <div class="divider-2"></div>
+    <div class="divider-1"></div>
 
-      <section class="section" id="services">
-        <div class="container grid">
-          <header>
-            <h2 class="title">Serviços</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni <strong>provident</strong> doloribus 
-              explicabo esse quod recusandae minus sint inventore, natus necessitatibus tempora,
-              soluta nobis exercitationem minima autem assumenda vitae quis ullam!
-            </p>
-          </header>
-          <div class="cards grid">
-            <div class="card">
-              <i class="icon-development"></i>
-              <h3 class="title">Prisma Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipis.</p>
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header>
+          <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+        </header>
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dignissimos! Inventore
+                  sapiente ex provident excepturi doloremque necessitatibus explicabo doloribus quam, repellat quas ut?
+                  Debitis ab officia a, quaerat quasi adipisci.
+                </p>
+                <cite>
+                  <img src="src/pictures/people-003.jpg" alt="Foto de João Souza" />
+                  João Souza
+                </cite>
+              </blockquote>
             </div>
-            <div class="card">
-              <i class="icon-tools"></i>
-              <h3 class="title">Prisma Tools</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dignissimos! Inventore
+                  sapiente ex provident excepturi doloremque necessitatibus explicabo doloribus quam, repellat quas ut?
+                  Debitis ab officia a, quaerat quasi adipisci.
+                </p>
+                <cite>
+                  <img src="src/pictures/people-001.jpg" alt="Foro de Maria Beckhä" />
+                  Maria Beckhä
+                </cite>
+              </blockquote>
             </div>
-            <div class="card">
-              <i class="icon-sale"></i>
-              <h3 class="title">Prisma Sale</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dignissimos! Inventore
+                  sapiente ex provident excepturi doloremque necessitatibus explicabo doloribus quam, repellat quas ut?
+                  Debitis ab officia a, quaerat quasi adipisci.
+                </p>
+                <cite>
+                  <img src="src/pictures/people-002.jpg" alt="Foto de Mario Almeida" />
+                  Mario Almeida
+                </cite>
+              </blockquote>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <div class="divider-1"></div>
+    <div class="divider-2"></div>
 
-      <section class="section" id="testimonials">
-        <div class="container grid">
-          <header>
-            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
-            
-          </header>
-        </div>
-      </section>
-    </main>
+    <section class="section" id="contact">
+      <div class="container">
+        <header>
+          <h2 class="title">Entre em contato conosco</h2>
+        </header>
+      </div>
+    </section>
+  </main>
 
-    <footer></footer>
-    <script src="main.js"></script>
-  </body>
+  <footer></footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
