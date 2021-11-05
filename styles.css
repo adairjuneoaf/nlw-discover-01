@@ -172,6 +172,10 @@ nav ul li a:hover::after {
 }
 
 /* ==================MENU MOBILE=================== */
+.invisible {
+  visibility: hidden;
+}
+
 nav .menu {
   opacity: 0;
   visibility: hidden;
