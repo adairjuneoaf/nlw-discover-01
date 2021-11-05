@@ -24,7 +24,7 @@
 <body>
   <header id="header">
     <nav class="container">
-      <div class="logo-prisma-systems">
+      <div class="logo-prisma-systems choppy">
         <a class="icon-logo-prisma-systems logo prysma" href="#"></a>
         <a class="logo escrita" href="#">
           <!-- <img src="src/logo_inline.svg" alt="Logo da empresa prisma systems" /> -->
@@ -40,7 +40,7 @@
           <li><a class="title" href="#contact">Contato</a></li>
         </ul>
       </div>
-      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-menu smooth"></div>
       <div class="toggle icon-close"></div>
     </nav>
   </header>
@@ -71,7 +71,7 @@
           <img src="src/img-003.jpg" alt="Um grupo de pessoas trabalhando em seus computadores">
         </div>
         <div class="text">
-          <h2 class="title">Sobre Nós</h2>
+          <h2 class="title">Sobre nós</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             ratione quasi quas magni, recusandae dolores exercitationem
@@ -100,7 +100,7 @@
 
     <section class="section" id="services">
       <div class="container grid">
-        <header>
+        <header class="services">
           <h2 class="title">Serviços</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni <strong>provident</strong> doloribus
             explicabo esse quod recusandae minus sint inventore, natus necessitatibus tempora,
@@ -131,7 +131,7 @@
 
     <section class="section" id="testimonials">
       <div class="container">
-        <header>
+        <header class="testimonials-title">
           <h2 class="title">Depoimentos de quem já passou por aqui</h2>
         </header>
         <div class="testimonials swiper-container">
@@ -189,16 +189,30 @@
     <div class="divider-2"></div>
 
     <section class="section" id="contact">
-      <div class="container">
-        <header>
-          <h2 class="title">Entre em contato conosco</h2>
-        </header>
+      <div class="container grid">
+        <div class="text">
+          <h2 class="title">Entre em contato com a gente</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur accusamus error deleniti
+            veritatis alias eligendi.</p>
+          <a class="button"
+            href="https://api.whatsapp.com/send?phone=5538999240369&text=Ol%C3%A1%2C%20entro%20em%20contato%20diretamente%20do%20site%20da%20Prisma.%20Tudo%20bem%3F"
+            target="_blank"><i class="icon-whatsapp"></i>Entrar em contato</a>
+        </div>
+
+        <div class="links">
+          <ul class="grid">
+            <li><i class="icon-phone"></i> 38 99924-0369</li>
+            <li><i class="icon-map-pin"></i> Montes Claros, MG</li>
+            <li><i class="icon-mail"></i> contato@prismasystems.com.br</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
   <footer></footer>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="main.js"></script>
 </body>
 

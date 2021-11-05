@@ -32,6 +32,29 @@ const swiper = new Swiper('.swiper-container',{
     pagination:{
         el: '.swiper-pagination'
     },
-    mousewheel: true,
     keyboard: true
 })
+
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 500,
+})
+
+scrollReveal.reveal(
+    `#header .logo-prisma-systems, #header .icon-menu`,
+    {
+        delay: 250,
+        easing: 'cubic-bezier(.5,0,.49,1)'
+})
+
+scrollReveal.reveal(
+    `#home .image, #home .text,
+    #about .image, #about .text,
+    #services .services, .cards .card,
+    #testimonials .testimonials-title, .testimonials .testimonial,
+    #contact .text, #contact .links`,
+    {
+        delay: 550
+    }
+)
