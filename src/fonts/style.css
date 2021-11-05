@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?vcv11t');
-  src:  url('fonts/icomoon.eot?vcv11t#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?vcv11t') format('truetype'),
-    url('fonts/icomoon.woff?vcv11t') format('woff'),
-    url('fonts/icomoon.svg?vcv11t#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?3ikpav');
+  src:  url('fonts/icomoon.eot?3ikpav#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3ikpav') format('truetype'),
+    url('fonts/icomoon.woff?3ikpav') format('woff'),
+    url('fonts/icomoon.svg?3ikpav#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-up:before {
+  content: "\e90d";
+}
 .icon-logo-prisma-systems:before {
   content: "\e90c";
 }
