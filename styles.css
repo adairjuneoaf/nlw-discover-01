@@ -111,7 +111,6 @@ body {
 }
 
 #header {
-  border-bottom: 1px solid #dbdbdb79;
   margin-bottom: 2rem;
   display: flex;
 
@@ -523,13 +522,18 @@ footer .brand p {
   margin-bottom: 0.75rem;
 }
 
+footer .social {
+  display: grid;
+
+  gap: 2rem;
+
+  place-content: center;
+  grid-auto-flow: column;
+}
+
 footer .social i {
   font-size: 1.5rem;
   color: var(--white-default);
-}
-
-footer .social a {
-  margin-right: 2rem;
 }
 
 /* ================== */
@@ -565,6 +569,10 @@ footer .social a {
 
 @media (min-width: 1200px) {
   /* ================================== */
+  .title-menu {
+    font: 400 1rem "DM Sans", sans-serif;
+  }
+
   .container {
     width: 70rem;
     margin-left: auto;
@@ -649,7 +657,6 @@ footer .social a {
 
     gap: 4rem;
   }
-
   /* ================================== */
 
   #services .container {
@@ -689,6 +696,42 @@ footer .social a {
 
   div.testimonials {
     padding-top: 4rem;
+  }
+
+  /* ================================== */
+
+  #contact .container {
+    grid-auto-flow: column;
+    gap: 16.75rem;
+  }
+
+  #contact .title {
+    font-size: 2.25rem;
+  }
+
+  #contact p {
+    font-size: 1.125rem;
+  }
+
+  #contact .button {
+    height: 3.125rem;
+  }
+
+  #contact .links {
+    display: grid;
+    place-content: center;
+  }
+
+  /* ================================== */
+
+  .footer div.container {
+    grid-auto-flow: column;
+
+    gap: 45rem;
+  }
+
+  .footer .brand {
+    max-width: 16.25rem;
   }
 }
 

@@ -40,19 +40,14 @@ window.addEventListener('scroll', ()=>{
 })
 
 const swiper = new Swiper('.swiper-container',{
-    slidesPerView: 1,
+    slidesPerView: 3,
     pagination:{
         el: '.swiper-pagination'
     },
     keyboard: true,
-    breakpoints:{
-        767: {
-            slidesPerView: 2,
-            setWrapperSize: true
-        }
-    }
 })
 
+/*
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -78,6 +73,8 @@ scrollReveal.reveal(
         interval: 500
     }
 )
+
+*/
 
 const backToTopButtton = document.querySelector('.back-to-top')
 
