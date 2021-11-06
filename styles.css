@@ -31,10 +31,6 @@ a {
   text-decoration: none;
 }
 
-main {
-  margin-top: calc(var(--header-height) + 2rem);
-}
-
 /* ==================ESTILOS/PADROES=================== */
 
 html {
@@ -99,7 +95,7 @@ body {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: calc(5rem + var(--header-height)) 0;
 }
 
 .section .title {
@@ -171,10 +167,35 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* ==================MENU MOBILE=================== */
-.invisible {
-  visibility: hidden;
+/* ======================LOGO====================== */
+
+.logo {
+  font: 700 1.31rem "Poppins", sans-serif;
+  color: var(--orange-dark);
+  /*
+  width: 50%;
+  height: auto;
+  */
 }
+
+div.logo-prisma-systems {
+  display: flex;
+  align-items: center;
+}
+
+nav a.escrita {
+  margin-left: 0.5rem;
+}
+
+nav a.prysma {
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #e9c46a 0%, #f4a261 50%, #e76f51 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
+/* ==================MENU MOBILE=================== */
 
 nav .menu {
   opacity: 0;
@@ -236,31 +257,6 @@ nav.show div.icon-close {
 }
 
 /* ==================ESTILOS/SECTIONS=================== */
-.logo {
-  font: 700 1.31rem "Poppins", sans-serif;
-  color: var(--orange-dark);
-  /*
-  width: 50%;
-  height: auto;
-  */
-}
-
-div.logo-prisma-systems {
-  display: flex;
-  align-items: center;
-}
-
-nav a.escrita {
-  margin-left: 0.5rem;
-}
-
-nav a.prysma {
-  text-transform: uppercase;
-  background: linear-gradient(to bottom, #e9c46a 0%, #f4a261 50%, #e76f51 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
-}
 
 #home {
   overflow: hidden;
@@ -513,6 +509,10 @@ footer {
   background-color: var(--orange-dark);
 }
 
+footer.section {
+  padding: 4rem 0;
+}
+
 footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -560,4 +560,143 @@ footer .social a {
   opacity: 1;
 
   transform: translateY(0%);
+}
+/* ================================================================================= */
+
+@media (min-width: 1200px) {
+  /* ================================== */
+  .container {
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0rem;
+  }
+
+  nav .menu ul {
+    display: flex;
+  }
+
+  nav.show .menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  div.toggle {
+    display: none;
+  }
+
+  nav ul .title {
+    font-size: 1rem;
+  }
+
+  main {
+    margin-top: var(--header-height);
+  }
+
+  /* ================================== */
+
+  #home .container {
+    grid-auto-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+
+    gap: 7.375rem;
+  }
+
+  #home .text .title {
+    font-size: 2.25rem;
+  }
+
+  #home .text p {
+    font-size: 1.125rem;
+  }
+
+  #home .text {
+    order: 0;
+    text-align: left;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .image img {
+    width: 35rem;
+    height: auto;
+    right: 0;
+  }
+
+  #home .text .button {
+    height: 3.125rem;
+  }
+
+  /* ================================== */
+
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+
+    gap: 4rem;
+  }
+
+  /* ================================== */
+
+  #services .container {
+    gap: 4rem;
+  }
+
+  #services header {
+    text-align: center;
+
+    max-width: 32rem;
+
+    margin: 0 auto;
+  }
+
+  #services .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #services .card {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  /* ================================== */
+
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #testimonials header {
+    text-align: center;
+    max-width: 32rem;
+
+    margin: 0 auto;
+  }
+
+  div.testimonials {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 1023px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 768px) {
 }

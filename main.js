@@ -12,8 +12,10 @@ for(const element of toggle){
 window.addEventListener('click', ()=>{
     if(nav.classList.contains('show')){
         open.style.visibility = 'hidden'
+        document.body.style.overflow = "hidden"
     }else{
         open.style.visibility = 'visible'
+        document.body.style.overflow = "visible"
     }
 
 })
@@ -42,19 +44,25 @@ const swiper = new Swiper('.swiper-container',{
     pagination:{
         el: '.swiper-pagination'
     },
-    keyboard: true
+    keyboard: true,
+    breakpoints:{
+        767: {
+            slidesPerView: 2,
+            setWrapperSize: true
+        }
+    }
 })
 
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
-    duration: 1000,
+    duration: 500,
 })
 
 scrollReveal.reveal(
     `#header .logo-prisma-systems, #header .icon-menu`,
     {
-        duration: 500,
+        duration: 600,
         delay: 100,
         easing: 'cubic-bezier(.5,0,.49,1)'
 })
@@ -63,7 +71,7 @@ scrollReveal.reveal(
     `#home .image, #home .text,
     #about .image, #about .text,
     #services .services, .cards .card,
-    #testimonials .testimonials-title, .testimonials .testimonial,
+    #testimonials .testimonials-title, .testimonials,
     #contact .text, #contact .links,
     .brand nav, .brand p, .social`,
     {
