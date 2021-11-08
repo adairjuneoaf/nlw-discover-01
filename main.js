@@ -51,6 +51,9 @@ const swiper = new Swiper('.swiper-container',{
             setWrapperSize: true
         }
          
+    },
+    autoplay :{
+        delay: 5000
     }
 })
 
@@ -61,17 +64,11 @@ const scrollReveal = ScrollReveal({
 })
 
 scrollReveal.reveal(
-    `#header .logo-prisma-systems, #header .icon-menu`,
+    `#header`,
     {
         duration: 600,
         delay: 100,
         easing: 'cubic-bezier(.5,0,.49,1)'
-})
-
-scrollReveal.reveal(
-    `#header .title`,
-    {
-        interval: 600,
 })
 
 scrollReveal.reveal(
@@ -85,6 +82,35 @@ scrollReveal.reveal(
         interval: 500
     }
 )
+
+/*
+const scrollRevealMenu = document.querySelector("#header .menu")
+
+window.addEventListener('resize', () => {
+    if(window.innerWidth > 1200){
+        console.log("inserido")
+        scrollRevealMenu.classList.add("sequenced")
+    }else{
+        console.log("removido")
+        scrollRevealMenu.classList.remove("sequenced")
+    }
+})
+*/
+
+
+/*
+window.addEventListener('resize', ()=>{
+    if(window.innerWidth > 1200){
+        console.log("asasa")
+        scrollReveal.reveal(
+            `#header .menu`,
+            {
+                interval: 600,
+        })
+    }
+    }
+)
+*/
 
 const backToTopButtton = document.querySelector('.back-to-top')
 

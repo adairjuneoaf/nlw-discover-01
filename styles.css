@@ -264,6 +264,8 @@ nav.show div.icon-close {
 
 #home .container {
   margin: 0;
+
+  align-items: center;
 }
 
 #home .image {
@@ -306,6 +308,7 @@ nav.show div.icon-close {
 
 #home .text p {
   margin-bottom: 2rem;
+  font-size: 1.125rem;
 }
 
 /* ==================================== */
@@ -317,10 +320,13 @@ nav.show div.icon-close {
 
 #about .container {
   margin: 0;
+
+  align-items: center;
 }
 
 #about .image {
   position: relative;
+  height: fit-content;
 }
 
 #about .image::before {
@@ -350,6 +356,10 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
+#about .text p {
+  font-size: 1.125rem;
+}
+
 /* ==================================== */
 
 .cards.grid {
@@ -375,6 +385,10 @@ nav.show div.icon-close {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+#services p {
+  font-size: 1.125rem;
 }
 
 /* ==================================== */
@@ -481,6 +495,11 @@ nav.show div.icon-close {
 
 #contact ul li i {
   color: var(--orange-dark);
+}
+
+#contact ul li a {
+  display: flex;
+  color: var(--white-gray-dark);
 }
 
 /* ================== */
@@ -664,10 +683,18 @@ footer .social a {
 
     gap: 4rem;
   }
+
+  #about .text .title {
+    font-size: 2.25rem;
+  }
   /* ================================== */
 
   #services .container {
     gap: 4rem;
+  }
+
+  #services .text .title {
+    font-size: 2.25rem;
   }
 
   #services header {
@@ -692,6 +719,10 @@ footer .social a {
   #testimonials .container {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #testimonials .title {
+    font-size: 2.25rem;
   }
 
   #testimonials header {
