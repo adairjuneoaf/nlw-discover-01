@@ -40,14 +40,20 @@ window.addEventListener('scroll', ()=>{
 })
 
 const swiper = new Swiper('.swiper-container',{
-    slidesPerView: 3,
+    slidesPerView: 1,
     pagination:{
         el: '.swiper-pagination'
     },
     keyboard: true,
+    breakpoints:{
+        767: {
+            slidesPerView: 2,
+            setWrapperSize: true
+        }
+         
+    }
 })
 
-/*
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -63,6 +69,12 @@ scrollReveal.reveal(
 })
 
 scrollReveal.reveal(
+    `#header .title`,
+    {
+        interval: 600,
+})
+
+scrollReveal.reveal(
     `#home .image, #home .text,
     #about .image, #about .text,
     #services .services, .cards .card,
@@ -73,8 +85,6 @@ scrollReveal.reveal(
         interval: 500
     }
 )
-
-*/
 
 const backToTopButtton = document.querySelector('.back-to-top')
 

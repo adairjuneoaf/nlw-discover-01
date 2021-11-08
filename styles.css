@@ -189,6 +189,7 @@ nav a.escrita {
 nav a.prysma {
   text-transform: uppercase;
   background: linear-gradient(to bottom, #e9c46a 0%, #f4a261 50%, #e76f51 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
@@ -430,6 +431,10 @@ nav.show div.icon-close {
   margin-right: 0.5rem;
 }
 
+.testimonials {
+  overflow-x: hidden;
+}
+
 /* swiper */
 .swiper-slide {
   height: auto;
@@ -499,6 +504,7 @@ footer .brand .logo {
 footer .brand a.prysma {
   text-transform: uppercase;
   background: linear-gradient(to bottom, #f9f9f9 0%, #f9f9f9 50%, #f9f9f9 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
@@ -522,19 +528,20 @@ footer .brand p {
   margin-bottom: 0.75rem;
 }
 
-footer .social {
-  display: grid;
-
-  gap: 2rem;
-
-  place-content: center;
-  grid-auto-flow: column;
-}
-
-footer .social i {
+footer i {
   font-size: 1.5rem;
   color: var(--white-default);
 }
+footer .social {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+/*
+footer .social a {
+  font-size: 1.5rem;
+  color: var(--white-default);
+} */
 
 /* ================== */
 
@@ -719,19 +726,23 @@ footer .social i {
 
   #contact .links {
     display: grid;
-    place-content: center;
   }
 
   /* ================================== */
 
-  .footer div.container {
-    grid-auto-flow: column;
-
-    gap: 45rem;
-  }
-
   .footer .brand {
     max-width: 16.25rem;
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+
+  .footer .social {
+    margin: 0;
   }
 }
 
